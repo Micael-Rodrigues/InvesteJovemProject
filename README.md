@@ -27,13 +27,9 @@
 ## Descrição do projeto 
 
 <p align="justify">
-Nada melhor do que sair de férias e conhecer lugares ainda desconhecidos ou lugares que amamos, não é mesmo? Pois, eu adoro viajar com minha família e amigos! Além disso, esse momento permite que nossos corpos, mentes e emoções fiquem super bem da melhor forma possível, recarregando nossas energias e refrescando nossas mentes.
+Se você procura saber mais sobre Educação Financeira e Investimento está no lugar certo. Aqui, você vai navegar e descobrir mais sobre esse universo. Que tal começar descobrindo qual o seu perfil? Você é uma pessoa Econômica ou Consumista ? Não Sabe? No Investe JOvem você descobre!
 
-Afinal, descansar, conhecer pessoas, lugares e novas experiências proporcionam total sensação de bem-estar. Independentemente de ser uma viagem de férias ou de feriado, ela sempre trará pontos positivos e muitas histórias para contar. Entretanto, com tudo isso de bom há muitas pessoas que nem se quer pisaram em um aeroporto na sua vida e para essas pessoas pensamos em ajuda-las com um site que dê todo o apoio para dar os primeiros passos nesse universo das viagens!
-
-Então, Let's travel? ✈️
-
-![Descrição do projeto](https://carregandomalinhas.com.br/wp-content/uploads/2019/09/banner_full_arroundtheword.jpg)
+<img align="center" alt="Banner-descrição" style="width:100%;" src="Estratégia.jpg">
 </p>
 
 
@@ -47,11 +43,11 @@ Então, Let's travel? ✈️
 
 ## Licença
 
-Sua Viagem is [GNU General Public License v3.0](./LICENSE).
+Investe Jovem is [GNU General Public License v3.0](./LICENSE).
 
 ## Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto](https://github.com/micael-rodrigues/SuaViagemProject) ou [baixá-lo](https://github.com/micael-rodrigues/SuaViagemProject/archive/refs/heads/main.zip).
+Você pode [acessar o código fonte do projeto](https://github.com/Micael-Rodrigues/InvesteJovemProject) ou [baixá-lo](https://github.com/micael-rodrigues/InvesteJovemProject/archive/refs/heads/main.zip).
 
 
 ## Abrir e rodar o projeto
