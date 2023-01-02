@@ -1,8 +1,8 @@
 <h1 align="center">
-  Bem Vindo(a) a Sua Viagem!
+  Bem Vindo(a) ao Investe Jovem!
 </h1>
 
-<img align="center" alt="Banner" style="border-radius:50px;" src="Let's travel.jpg">
+<img align="center" alt="Banner" style="border-radius:50px;" src="Investir.jpg">
 
 <hr>
 
