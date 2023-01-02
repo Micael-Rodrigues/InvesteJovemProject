@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Investe Jovem - Bem Vindo(a)</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    </script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v11.0"
+        nonce="Z9HW6ic6"></script>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Investe Jovem</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">Educação Financeira</a></li> <!--about-->
+                    <li class="nav-item"><a class="nav-link" href="#services">Investimento</a></li> <!--services-->
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Dicas</a></li> <!--portfolio-->
+                    <li class="nav-item"><a class="nav-link" href="#contact">Quem Somos?</a></li> <!--contact-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <main>
+                        <section class="typing">
+                            <h1 id="text"></h1>
+                        </section>
+                    </main>
+                    <script>
+                        var content = 'Olá, Jovem!';
+                        var text = document.getElementById('text');
+
+                        var speed = 205;
+                        var cont = 0;
+
+                        function typeWriter() {
+                            if (cont < content.length) {
+                                text.textContent += content.charAt(cont);
+                                cont++;
+                                setTimeout(typeWriter, speed);
+                            } else {
+                                text.textContent = '';
+                                cont = 0;
+                                typeWriter();
+                            }
+                        }
+
+                        typeWriter();
+                    </script>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Se você procura saber mais sobre Educação Financeira e Investimento
+                        está no lugar certo. Aqui, você vai navegar e descobrir mais sobre esse universo. <br> Que tal
+                        começar descobrindo qual o seu perfil ? <br>Você é uma pessoa Econômica ou Consumista ? Não Sabe
+                        ? <br>Faça nosso quiz e descubra!
+                    </p>
+                    <button class="btn btn-primary btn-xl" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalLg">Click Aqui Para Iniciar Seu Quiz</button>
+
+                    <div class="modal fade" id="exampleModalLg" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Quiz</h5>
+                                    <button class="btn-close" type="button" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <script
+                                        src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+                                    <form id="myForm">
+                                        <b> 1) Você costuma fazer metas para o seu dinheiro? </b> <br>
+
+                                        <br> <select class="form-select" aria-label="Default select example">
+                                            <option selected></option>
+                                            <option name="radio" value="2"> Sim</option>
+                                            <option name="radio" value="1"> Não</option>
+
+                                        </select>
+
+
+                                        <br> <b> 2) Imagine que você acaba de ganhar 1.000 reais. O que você faria com
+                                            esse dinheiro? </b> <br>
+
+                                        <br> <select class="form-select" aria-label="Default select example">
+                                            <option selected></option>
+                                            <option name="radio2" value="1"> Você compraria algo que deseja</option>
+                                            <option name="radio2" value="2"> Você compraria algo por necessidade
+                                            </option>
+                                            <option name="radio2" value="2"> Você guardaria uma parte e gastaria a outra
+                                            </option>
+                                        </select>
+
+                                        <br> <b> 3) Você possui um dinheiro reservado apenas para emergências? </b> <br>
+
+                                        <br> <select class="form-select" aria-label="Default select example">
+                                            <option selected></option>
+                                            <option name="radio3" value="2"> Sim</option>
+                                            <option name="radio3" value="1"> Não</option>
+
+                                        </select>
+
+                                        <br> <b> 4) Imagine que você entra em uma loja e tem um tênis muito bonito em
+                                            promoção. Considerando que você já possui vários tênis em casa. <br>O que
+                                            você faria? </b> <br>
+
+                                        <br> <select class="form-select" aria-label="Default select example">
+                                            <option selected></option>
+                                            <option name="radio4" value="1"> Levaria o tênis, pois não sabe se ele
+                                                ficará com esse preço novamente</option>
+                                            <option name="radio4" value="2"> Não levaria o tênis, pois já possui muitos
+                                                em sua casa</option>
+
+                                        </select>
+
+                                        <br> <b>5) Imagine que você precisa muito comprar um celular novo. <br>Assinale
+                                            a resposta que responde o que você faria. </b> <br>
+
+                                        <br> <select class="form-select" aria-label="Default select example">
+                                            <option selected></option>
+                                            <option name="radio5" value="1"> Apenas procuraria o celular que quero e
+                                                compraria na primeira loja que encontrasse</option>
+                                            <option name="radio5" value="2"> Pesquisaria o preço do produto em várias
+                                                lojas diferentes</option>
+
+                                        </select>
+
+                                        <br> <b> 6) Imagine que você está com pouca roupa e necessita comprar mais,
+                                            então você vai ao shopping comprar, ao chegar em frente a loja, você,
+                                            olhando para a loja de eletrônicos percebeu que o mais novo e mais desejado
+                                            celular do mercado está em promoção. <br>O que você faz? </b> <br>
+
+                                        <br> <select class="form-select" aria-label="Default select example">
+                                            <option selected></option>
+                                            <option name="radio6" value="2"> Você Compraria somente as roupas</option>
+                                            <option name="radio6" value="1"> Você compraria o celular</option>
+                                            <option name="radio6" value="1"> Compraria os dois</option>
+                                        </select>
+
+                                        <br> <b> 7) Você planeja antes de comprar? </b> <br>
+
+                                        <br> <select class="form-select" aria-label="Default select example">
+                                            <option selected></option>
+                                            <option name="radio7" value="2"> Sim</option>
+                                            <option name="radio7" value="1"> Não</option>
+
+                                        </select>
+
+                                    </form>
+                                </div>
+                                <input class="btn btn-outline-success btn-xl" type="button" name="t1" id="botao"
+                                    value="Verificar" />
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                $('#botao').on('click', function () {
+                                    var value = parseInt($("[name=radio]:checked").val()) + parseInt($("[name=radio2]:checked").val()) + parseInt($("[name=radio3]:checked").val()) + parseInt($("[name=radio4]:checked").val()) + parseInt($("[name=radio5]:checked").val()) + parseInt($("[name=radio6]:checked").val()) + parseInt($("[name=radio7]:checked").val());
+
+                                    if (value >= 12) {
+                                        alert("Você é uma pessoa Econômica")
+                                    } else if (value <= 9) {
+                                        alert("Você é uma pessoa Consumista")
+                                    } else {
+                                        alert("Você possui características Consumistas e economista!")
+                                    }
+
+
+                                })
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="page-section bg-primary" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Você sabe o que é Educação Financeira ?</h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4"> A nossa situação financeira impacta todas as áreas da nossa vida. Por
+                        isso, é essencial organizar nossas finanças pessoais. Se você não possuir um planejamento
+                        financeiro pode causar diversos problemas para sua vida pessoal. Aqui nós te ajudaremos nessa
+                        jornada das das finanças pessoais.</p>
+                    <a class="btn btn-outline-light btn-xl"
+                        href="/Edu. Financeira/index3.html">Click Aqui Para Ler
+                        Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Investimento</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+
+                        <img class="img-fluid"
+                            src="/Pagina-Inicial/assets/img/portfolio/thumbnails/pig2.png">
+                        <h3 class="h4 mb-2"> <br>Poupança</h3>
+                        <p class="text-muted mb-0">A poupança é um tipo de conta bancária voltada para as pessoas que
+                            buscam acumular quantias de dinheiro, realizando a menor quantidade de retiradas possível.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/t.d.png">
+                        <h3 class="h4 mb-2"> <br>Tesouro Direto</h3>
+                        <p class="text-muted mb-0">O Tesouro Direto é um Programa do Tesouro Nacional desenvolvido para
+                            venda de títulos públicos federais para pessoas físicas, de forma 100% online.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/cdb.png">
+                        <h3 class="h4 mb-2"> <br>CDB</h3>
+                        <p class="text-muted mb-0">Certificado de Depósito Bancário e funciona como uma renda fixa do
+                            tipo crédito privado, oferecido por bancos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/lci.png">
+                        <h3 class="h4 mb-2"> <br>LCI / LCA</h3>
+                        <p class="text-muted mb-0">As LCI e as LCA são títulos de investimentos emitidos por bancos para
+                            financiar 2 setores importantes da economia: <br>
+                            • Setor Imobiliário (LCI)
+                            • Setor do Agronegócio (LCA)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 text-center">
+            <br> <a class="btn btn-outline-primary btn-xl"
+                href="/Investimentos/index4.html">Click Aqui Para Ler Mais</a>
+        </div>
+    </section>
+    <!-- Portfolio-->
+    <div id="portfolio">
+        <h2 class="text-center mt-0">Dicas para conseguir uma renda extra</h2>
+        <hr class="divider" />
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/thumbnails/dog.jpg" title="Passear com Pets">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/dog.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Click</div>
+                            <div class="project-name">Passear com Pets</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/thumbnails/escola.jpg"
+                        title="Aulas particulares">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/escola.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Click</div>
+                            <div class="project-name">Aulas particulares</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/thumbnails/roupa.jpg" title="Bazar">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/roupa.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">click</div>
+                            <div class="project-name">Bazar</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/thumbnails/outra.jpg" title="Brechós">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/outra.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Click</div>
+                            <div class="project-name">Brechós</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/thumbnails/cell.jpg" title="Aplicativos">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/cell.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Click</div>
+                            <div class="project-name">Aplicativos</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/thumbnails/reo.jpg" title="Artesanato">
+                        <link href="css/styles.css" rel="stylesheet" />
+                        <style>
+                            .slbCaption {
+                                top: 0px;
+                            }
+                        </style>
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/reo.jpg" alt="..." />
+                        <div class="portfolio-box-caption p-3">
+                            <div class="project-category text-white-50">Click</div>
+                            <div class="project-name">Artesanato</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Quem Somos ?</h2>
+                        <hr class="divider" />
+                        <p class="text-muted mb-5">Isso é um projeto dos alunos do curso técnico de informática do IFCE
+                            - campus Fortaleza. Nosso objetivo é ajudar você a entender a importância da educação
+                            financeira, do investimento e ajudá-lo(a) a saber como dar seus primeiros passos nesse
+                            universo.
+                        <p>
+                    </div>
+                </div>
+
+                <!-- Header -->
+                <header class="bg-primary text-center py-5 mb-4">
+                    <div class="container">
+                        <h1 class="fw-light text-white">Conheça a Equipe</h1>
+                    </div>
+                </header>
+
+                <!-- Page Content -->
+                <div class="container">
+                    <div class="row">
+                        <!-- Team Member 1 -->
+                        <div class="col-xl-4 col-md-7 mb-5">
+                            <div class="card border-0 shadow">
+                                <img src="/Pagina-Inicial/assets/img/micael.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-0">Micael Rodrigues</h5>
+                                    <div class="card-text text-black-50">Web Developer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team Member 2 -->
+                        <div class="col-xl-4 col-md-7 mb-5">
+                            <div class="card border-0 shadow">
+                                <img src="/Pagina-Inicial/assets/img/jamily2.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-0">Jamily Santiago</h5>
+                                    <div class="card-text text-black-50">Web Developer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team Member 3 -->
+                        <div class="col-xl-4 col-md-7 mb-5">
+                            <div class="card border-0 shadow">
+                                <img src="/Pagina-Inicial/assets/img/geissy.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-0">Geissy Kelly</h5>
+                                    <div class="card-text text-black-50">Web Desing Developer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                                <img class="img-fluid" src="assets/img/IFCE.png"></img>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="small text-center text-muted">
+                    © Designed by <a href="/index.html">Investe Jovem Company.</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

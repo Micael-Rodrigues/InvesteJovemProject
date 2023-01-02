@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Investe Jovem - Investimentos</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="/Pagina-Inicial/index2.html">Investe
+                Jovem</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">Como adquirir renda?</a></li> <!--about-->
+                    <li class="nav-item"><a class="nav-link" href="#services">Tipos de investimento</a></li>
+                    <!--services-->
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Comece sua jornada</a></li>
+                    <!--portfolio-->
+                    <li class="nav-item"><a class="nav-link" href="#contact">Quem Somos?</a></li> <!--contact-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Investimentos</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Investimento é qualquer gasto de recurso ou aplicação que gere
+                        retornos futuros. Este conceito envolve dinheiro e capital intelectual, social ou natural. O
+                        investimento é uma maneira pragmática de fazer o dinheiro trabalhar para você, fazendo isso você
+                        potencializa seu dinheiro independente da situação onde você está inserido fazendo esse dinheiro
+                        render. Confie em mim: desvendar seu significado pode ser mais fácil do que parece.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="page-section bg-primary" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-white mt-0">Como adquirir renda sendo menor de 18 anos?</h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4"> Para ganhar dinheiro sendo menor de idade você
+                        precisará encontrar algum tipo de serviço ou produto
+                        simples para oferecer. De modo que isso lhe gere uma pequena renda sem comprometer os seus
+                        estudos e sua segurança. Afinal todos nós quando ainda somos adolescentes queremos muitas coisas
+                        que às vezes os nossos pais não podem nos dar. Então acabamos pensando na possibilidade de
+                        trabalhar para conseguir ganhar uma graninha extra. Com tudo isso, decidimos preparar algumas
+                        ideias de "trabalhos" que você poderá desenvolver e começar a ganhar dinheiro sendo menor de
+                        idade. Muitos deles podem ser feitos a partir de casa, mas todos eles precisam ter a permissão e
+                        o acompanhamento dos seus pais.
+                    </p>
+                    <br>
+                    <div id="slider">
+                        <a class="control_next">></a>
+                        <a class="control_prev">
+                            << /a>
+                                <ul>
+                                    <li>
+
+                                        <img src="js/ft1.png" />
+
+                                    </li>
+                                    <li>
+
+                                        <img src="js/ft2.png" />
+
+                                    </li>
+                                    <li>
+
+                                        <img src="js/ft3.png" />
+
+                                    </li>
+
+                                </ul>
+                    </div>
+
+                    <script>
+                        $(function () {
+                            $('#checkbox').change(function () {
+                                setInterval(function () {
+                                    moveRight();
+                                }, 3000);
+                            });
+
+                            var slideCount = $('#slider ul li').length;
+                            var slideWidth = $('#slider ul li').width();
+                            var slideHeight = $('#slider ul li').height();
+                            var sliderUlWidth = slideCount * slideWidth;
+
+                            $('#slider').css({
+                                width: slideWidth,
+                                height: slideHeight
+                            });
+
+                            $('#slider ul').css({
+                                width: sliderUlWidth,
+                                marginLeft: -slideWidth
+                            });
+
+                            $('#slider ul li:last-child').prependTo('#slider ul');
+
+                            function moveLeft() {
+                                $('#slider ul').animate({
+                                    left: +slideWidth
+                                }, 200, function () {
+                                    $('#slider ul li:last-child').prependTo('#slider ul');
+                                    $('#slider ul').css('left', '');
+                                });
+                            };
+
+                            function moveRight() {
+                                $('#slider ul').animate({
+                                    left: -slideWidth
+                                }, 200, function () {
+                                    $('#slider ul li:first-child').appendTo('#slider ul');
+                                    $('#slider ul').css('left', '');
+                                });
+                            };
+
+                            $('a.control_prev').click(function () {
+                                moveLeft();
+                            });
+
+                            $('a.control_next').click(function () {
+                                moveRight();
+                            });
+                        });
+                    </script>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <p class="text-white-75 mb-4">Como você pôde ver, existem diversas coisas simples que você pode
+                        fazer para começar a ganhar dinheiro antes dos 18 anos. Além disso, você pode também participar
+                        de alguma seleção para Jovem Aprendiz de empresas, se você sabe fazer algo que possa gerar uma
+                        renda para você como brigadeiros ou pulseiras, por exemplo, você pode vender esses produtos. O
+                        que você deve fazer é analisar qual dessas ideias acredita que conseguirá fazer ou procurar
+                        novas opções que você possa realizar. Acima de tudo, é recomendável que você converse com seus
+                        pais e tenha sempre a ajuda deles no que você deseja realizar. Isso é muito importante para sua
+                        segurança e para que a atividade que você esteja realizando seja feita da forma correta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Investimento</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/pig2.png">
+                        <h3 class="h4 mb-2"> <br>Poupança</h3>
+                        <p class="text-muted mb-0">A poupança é um tipo de conta bancária voltada para as pessoas que
+                            buscam acumular quantias de dinheiro, realizando a menor quantidade de retiradas possível.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/t.d.png">
+                        <h3 class="h4 mb-2"> <br>Tesouro Direto</h3>
+                        <p class="text-muted mb-0">O Tesouro Direto é um Programa do Tesouro Nacional desenvolvido para
+                            venda de títulos públicos federais para pessoas físicas, de forma 100% online.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/cdb.png">
+                        <h3 class="h4 mb-2"> <br>CDB</h3>
+                        <p class="text-muted mb-0">Certificado de Depósito Bancário e funciona como uma renda fixa do
+                            tipo crédito privado, oferecido por bancos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/lci.png">
+                        <h3 class="h4 mb-2"> <br>LCI / LCA</h3>
+                        <p class="text-muted mb-0">As LCI e as LCA são títulos de investimentos emitidos por bancos para
+                            financiar 2 setores importantes da economia: <br>
+                            • Setor Imobiliário (LCI)
+                            • Setor do Agronegócio (LCA)</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p class="text-muted mb-4 text-center"> A cultura dos brasileiros na perspectiva de seu comportamento em
+                relação à área financeira é predominantemente um perfil consumista, tendo uma visão de curto prazo. A
+                importância de investir seu dinheiro é enorme, pois o investimento faz com que o valor poupado no
+                presente seja preservado e não perca seu valor, ou seja, seu poder de compra, pelo contrário que esse
+                dinheiro possa render e ser multiplicado. </p>
+        </div>
+        <br>
+        <br>
+
+        <section class="page-section bg-primary">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-left text-uppercase text-white"> ↬ Então, por que devo investir?</h2>
+            <!-- About Section Content-->
+            <br>
+            <div class="row">
+                <div class="col-lg-11 ms-auto">
+                    <p class="text-white-75 lead">O investimento é uma maneira pragmática de fazer o dinheiro trabalhar
+                        para você, fazendo isso você potencializa seu dinheiro independente da situação que você está
+                        inserido fazendo esse dinheiro render. O investimento é uma maneira pragmática de fazer o
+                        dinheiro trabalhar para você, fazendo isso você potencializa seu dinheiro independente da
+                        situação que você está inserido fazendo esse dinheiro render.</p>
+                </div><br>
+                <br>
+                <br>
+                <h2 class="page-section-heading text-left text-uppercase text-white"> ↬ Então, quais são os tipos de
+                    investimento?</h2>
+                <!-- About Section Content-->
+                <br>
+                <div id="div2" class="row">
+                    <div class="col-lg-11 ms-auto">
+                        <p class="text-white-75 lead">Existem vários, mas vamos citar apenas quatro delas. <br>
+                            <br>◦ Poupança - Como você observou acima, a poupança, também conhecida como caderneta de
+                            poupança, é o tipo de conta destinada a pessoas que desejam acumular dinheiro, com o menor
+                            número de retiradas possíveis. É importante frisar que caso você seja menor de idade, é
+                            necessário que haja autorização e consentimento de seus pais para a abertura de uma conta
+                            poupança.
+                        </p>
+                    </div>
+
+                    <br>
+                    <h2 class="page-section-heading text-left text-uppercase text-white"> ↬ Como funciona e como eu
+                        posso abrir uma conta poupança?</h2>
+                    <!-- About Section Content-->
+                    <br>
+                    <div id="div2" class="row">
+                        <div class="col-lg-11 ms-auto">
+                            <p class="text-white-75 lead">Conforme o Banco Central, um menor de idade pode ser titular
+                                de uma conta poupança se: <br>
+                                <br>
+                                1- menores de 16 sejam representados pelos pais ou responsáveis legais;<br>
+                                2- menores entre 16 e 18 anos não emancipados sejam assistidos pelos pais ou
+                                responsáveis legais; <br>
+
+                                <br> Isso significa que, se o menor ainda não tiver 16 anos, o responsável pode ir até o
+                                banco e abrir a conta sem necessariamente precisar da presença do menor, apenas,
+                                portanto seus documentos. Se o menor já tem 16 anos, precisa apenas da presença do
+                                responsável apenas na abertura da conta. Na abertura da conta pode haver algumas
+                                diferenças dependendo do banco, mas geralmente não tem nenhum tipo de custo. Em relação
+                                ao depósito mínimo, algumas instituições exigem algum valor, mas, na maioria, não
+                                possuem essa exigência.
+                                <br>
+                                <br>Então, agora basta um responsável legal ir até o banco sozinho, se o menor não tiver
+                                16 anos ainda, ou acompanhando o menor entre 16 e 18 anos. Aliás, algumas instituições
+                                permitem a abertura de conta por meios eletrônicos, você pode conferir se essa é uma
+                                alternativa possível no banco de sua escolha.
+
+                            </p>
+                        </div>
+                        <br>
+                        <br>
+                        <h2 class="page-section-heading text-left text-uppercase text-white"> ↬ E os documentos
+                            necessários?</h2>
+                        <!-- About Section Content-->
+                        <br>
+                        <div id="div2" class="row">
+                            <div class="col-lg-11 ms-auto">
+                                <p class="text-white-75 lead"> 1-carteira de identidade (ou equivalente) do menor (e do
+                                    responsável, se menor de 16 anos);
+                                    <br>2-CPF do menor (e do responsável, se menor de 16 anos);
+                                    <br>3-comprovante de residência do responsável;
+                                    <br>4-comprovante de renda do responsável (se exigido pelo banco);
+                                    <br>
+                                    <br>Com a sua conta aberta, você perceberá o recebimento de rendimentos sempre que
+                                    completar 1 mês do dinheiro a disposição da instituição financeira. Ou seja, se você
+                                    retirar o dinheiro antes de completar 1 mês da disponibilização, você não receberá
+                                    os rendimentos.
+                                </p>
+                            </div>
+
+                            <br>
+                            <h2 class="page-section-heading text-left text-uppercase text-white"> ↬ Como acontece o
+                                rendimento da poupança?</h2>
+                            <!-- About Section Content-->
+                            <br>
+                            <div id="div2" class="row">
+                                <div class="col-lg-11 ms-auto">
+                                    <p class="text-white-75 lead">Funciona da seguinte forma a mesma rende em função da
+                                        taxa Selic que é a taxa básica de juros da economia no Brasil e também da taxa
+                                        referencial que uma taxa baseada nos juros utilizados no CDBs de grandes bancos
+                                        que é calculado pela Bacen.
+
+                                        Os rendimentos da poupança são indexados pela SELIC e atendem às seguintes
+                                        regras:
+                                        <br>
+                                        <br>1 - Selic menor que 8,5% a.a. = Rendimento da poupança é 70% da Selic;
+                                        <br>2 - Selic maior que 8,5% a.a. = Rendimento da poupança é 0,5% a.m.
+                                    </p>
+                                </div>
+
+                                <br>
+                                <h2 class="page-section-heading text-left text-uppercase text-white"> ↬ Qual a vantagem
+                                    de investir na poupança?</h2>
+                                <!-- About Section Content-->
+                                <br>
+                                <div id="div2" class="row">
+                                    <div class="col-lg-11 ms-auto">
+                                        <p class="text-white-75 lead">A poupança possui baixo risco e também não possui
+                                            incidência de IR em relação a outras formas de investimentos.
+                                        </p>
+                                    </div>
+
+                                    <br>
+                                    <h2 class="page-section-heading text-left text-uppercase text-white"> ↬ O que é
+                                        Tesouro Direto?</h2>
+
+                                    <!-- About Section Content-->
+                                    <br>
+                                    <div id="div2" class="row">
+                                        <div class="col-lg-11 ms-auto">
+                                            <p class="text-white-75 lead"> É um programa do tesouro nacional, que vende
+                                                para pessoas físicas títulos públicos,100% online.
+                                                O mesmo surgiu com o intuito de que os títulos públicos pudessem ser
+                                                democratizados, suas aplicações podem ser feitas a partir de R$ 30,00.
+                                                Para poder utilizar esse tipo de investimento é necessário que você abra
+                                                uma conta no banco ou corretora habilitada. <br>
+
+                                                <br>
+
+                                                O tesouro direto oferece vários títulos com diferentes rentabilidades
+                                                como prefixada, ligada à variação da inflação ou à variação de outras
+                                                taxas (Selic e IPCA, por exemplo), possuindo diferentes prazos de
+                                                vencimento e diferentes fluxos de remuneração.
+
+                                                Assim como a poupança, o tesouro direto possui baixo risco, mas costuma
+                                                ter rendimentos mais altos que aquela.
+
+
+                                            </p>
+                                        </div>
+
+                                        <br>
+                                        <h2 class="page-section-heading text-left text-uppercase text-white"> ↬ Exemplos
+                                            de Tesouro Direto?</h2>
+                                        <br>
+                                        <!-- About Section Content-->
+                                        <br>
+                                        <div id="div2" class="row">
+                                            <div class="col-lg-11 ms-auto">
+                                                <ul class="text-white-75 lead">
+                                                    <li style="font-size: 20px;">Tesouro IPCA+</li>
+                                                </ul>
+                                                <p class="text-white-75 lead">É um título pós fixado, ou seja,
+                                                    rentabilidade não é definido com exatidão. O IPCA é o Índice de
+                                                    Preços ao Consumidor Amplo que é um indicador oficial da inflação no
+                                                    Brasil. Quando você coloca o seu dinheiro neste título, O seu
+                                                    dinheiro vai render a taxa definida no momento do investimento + a
+                                                    variação do IPCA no período definido. Por exemplo: um título
+                                                    “Tesouro IPCA + 2024 5,34%” significa que está rendendo 5,34% ao ano
+                                                    + o valor do IPCA e tem vencimento em 2024.
+                                                </p>
+                                                <br>
+                                                <ul class="text-white-75 lead">
+                                                    <li style="font-size: 20px;">Tesouro IPCA+ com juros semestrais</li>
+                                                </ul>
+                                                <p class="text-white-75 lead">O Tesouro IPCA + com juros semestrais
+                                                    segue o mesmo cálculo que o Tesouro IPCA +. A diferença é que, neste
+                                                    aqui, você vai receber o seu rendimento através de parcelas, a cada
+                                                    seis meses ao invés de receber toda a quantia de uma vez no prazo
+                                                    final. Por isso, se chama “juros semestrais”.
+
+                                                </p>
+                                                <br>
+                                                <ul class="text-white-75 lead">
+                                                    <li style="font-size: 20px;">Tesouro Prefixado </li>
+                                                </ul>
+                                                <p class="text-white-75 lead">Neste título você vai saber exatamente
+                                                    qual o valor da sua rentabilidade (que já é prefixado). Ao colocar o
+                                                    seu dinheiro neste título, ele vai render a taxa que foi definida
+                                                    quando você investiu. Por exemplo: um título “Tesouro Prefixado 2025
+                                                    11,02%” significa que está rendendo 11,02% ao ano – nada mais vai
+                                                    “interferir” nesse valor.
+
+                                                </p>
+                                                <br>
+                                                <ul class="text-white-75 lead">
+                                                    <li style="font-size: 20px;">Tesouro Prefixado com juros semestrais
+                                                    </li>
+                                                </ul>
+                                                <p class="text-white-75 lead">O Tesouro Prefixado com juros semestrais,
+                                                    ele segue o mesmo cálculo realizado pelo Tesouro Prefixado. Assim
+                                                    como no caso dos títulos com IPCA, a única diferença é que você vai
+                                                    receber o seu rendimento em parcelas a cada seis meses ao invés de
+                                                    receber toda a quantia no prazo final.
+
+                                                </p>
+                                                <br>
+                                                <ul class="text-white-75 lead">
+                                                    <li style="font-size: 20px;">Tesouro SELIC </li>
+                                                </ul>
+                                                <p class="text-white-75 lead">Assim como o Tesouro IPCA +, o Tesouro
+                                                    SELIC também é um título que não tem a rentabilidade definida com
+                                                    exatidão e depende de um indexador. Mas nesse caso, o indexador não
+                                                    é a inflação e sim a taxa SELIC que é o Sistema Especial de
+                                                    Liquidação e Custódia, uma taxa importantíssima no mundo financeiro.
+                                                    Então quando você coloca o seu dinheiro neste título, ele vai render
+                                                    a taxa determinada no momento do investimento + a variação da SELIC
+                                                    no período definido. Por exemplo, “Tesouro SELIC 2023 0,02%”
+                                                    significa que está rendendo 0,02% ao ano + o valor da SELIC e tem
+                                                    vencimento em 2023.
+
+                                                </p>
+                                            </div>
+
+                                            <br>
+                                            <h2 class="page-section-heading text-left text-uppercase text-white"> ↬ CDB
+                                            </h2>
+
+                                            <!-- About Section Content-->
+                                            <br>
+                                            <div id="div2" class="row">
+                                                <div class="col-lg-11 ms-auto">
+                                                    <p class="text-white-75 lead">CDB significa Certificado de Depósito
+                                                        Bancário e seu funcionamento se dá através de uma renda fixa do
+                                                        tipo crédito privado, oferecido por bancos. Resumindo, você
+                                                        empresta dinheiro ao Banco e eles emprestam aos seus clientes. A
+                                                        rentabilidade oferecida pelo CDB, muitas vezes, é maior que
+                                                        investimentos que são mais tradicionais como Tesouro Direto e a
+                                                        própria poupança, ela depende de quanto o banco está disposto a
+                                                        pagar para você. Já na assinatura do investimento o valor de
+                                                        retorno é definido, podendo variar por influência de alguns
+                                                        fatores como: valor total aplicado, tempo para retirada e até
+                                                        mesmo o banco tomador do crédito.
+
+                                                    </p>
+                                                </div>
+                                                <br>
+                                                <h2 class="page-section-heading text-left text-uppercase text-white"> ↬
+                                                    LCI/LCA</h2>
+
+                                                <!-- About Section Content-->
+                                                <br>
+                                                <div id="div2" class="row">
+                                                    <div class="col-lg-11 ms-auto">
+                                                        <p class="text-white-75 lead">As LCI (Letras de Crédito
+                                                            Imobiliário) e as LCA (Letras de Crédito do Agronegócio) são
+                                                            títulos de investimentos emitidos por bancos que financiam 2
+                                                            setores que são importantes da economia: <br>
+                                                            <br>
+                                                            • Setor Imobiliário (LCI) <br>
+                                                            • Setor do Agronegócio (LCA) <br>
+
+                                                            <br>
+
+                                                            Quando você investe em LCI ou em uma LCA, os bancos vão
+                                                            pegar o seu dinheiro e irão direcioná-lo a projetos dos
+                                                            setores Imobiliários ou do setor Agro. Como esses 2 setores
+                                                            são de extrema importância para a economia, o Governo
+                                                            decidiu motivar os investidores para que os mesmos adquiram
+                                                            LCI e LCA. Tendo como benefício a isenção total do Imposto
+                                                            de Renda no investimento, ou seja, ao investir em uma LCI ou
+                                                            em uma LCA você irá pagar nada de imposto e tornando o
+                                                            rendimento líquido.
+                                                        </p>
+                                                    </div>
+
+        </section>
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <br>
+                <h2 class="text-center">Comece a Investir</h2>
+                <hr class="divider" />
+                <p div class="col-lg-12 text-center">
+                    Então você já sabe como cuidar do seu dinheiro, já organizou suas metas, mas falta o mais
+                    importante. Como começar a investir? Por onde você deve começar?
+                    <br>
+                    Calma, nós vamos explicar tudo para você.
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <h2 class="page-section-heading text-left text-uppercase text-black"> ↬ Faça sua conta em um banco</h2>
+
+                <!-- About Section Content-->
+                <br>
+                <div id="div2" class="row">
+                    <div class="col-lg-11 ms-auto">
+                        <p class="text-black-75 lead" style="font-size: 18px;">
+                            Você precisará fazer sua conta em um banco e como você ainda não possui 18 anos nada melhor
+                            que fazer sua conta em um banco digital. Separamos para você quatro bancos, são eles; Banco
+                            Inter, Modalmais, Next e BB conta jovem.
+                            <br>
+                            <br>
+                            <b><strong>• Banco Inter:</strong></b> <br>
+                            <br>
+                            Através do aplicativo, o Banco Inter disponibiliza para você, menor de 18 anos, a criação de
+                            uma conta bancária chamada conta digital kids. A criação da conta e manutenção são gratuitas
+                            e você precisará apenas da autorização dos seus pais ou responsáveis legais. Ao baixar o
+                            aplicativo no seu celular ou entrar no site do banco, clique em Abrir conta gratuita. Você
+                            terá que preencher alguns dados com informações básicas como seu nome completo, nome da mãe
+                            ou do pai, onde mora e depois chega o momento de inserir os documentos necessários. Para
+                            abrir sua conta você precisará do RG e CPF seu e do seu responsável, além de um comprovante
+                            de residência. Ao mandar esses documentos, será necessário que você e seu responsável tirem
+                            uma selfie e pronto, você terminou seu cadastro. Após o cadastro vem o período de análise e
+                            eles darão retorno em até 10 dias. Com o cadastro aprovado você receberá um cartão de débito
+                            e terá acesso aos investimentos, pois o Banco Inter é banco e corretora. <br>
+                            <br>
+                            <br>
+                            <b><strong>• Banco Modalmais:</strong></b> <br>
+                            <br>
+                            Assim como o Banco Inter, o Modalmais é um banco digital e corretora ao mesmo tempo e a
+                            criação e manutenção da conta são completamente gratuitos. Para fazer o seu cadastro, por
+                            ser menor de 18 anos, será necessário que você, juntamente com o seu responsável, preencham
+                            alguns formulários. Os documentos necessários para a abertura da sua conta no banco
+                            Modalmais são: RG ou certidão de nascimento, comprovante de residência e RG, CNH OU RNE
+                            frente e verso do seu responsável. Após preencher todos os formulários necessários, você
+                            deve enviar para o email: meajuda@modalmais.com.br e o banco irá analisar e enviar para você
+                            uma resposta. <br>
+                            <br>
+                            <a
+                                href="https://ajuda.modalmais.com.br/hc/pt-br/articles/360056936634-%C3%89-poss%C3%ADvel-abrir-conta-para-menor-de-idade-">Clique
+                                aqui para ter acesso aos documentos.</a> <br>
+                            <br>
+                            <br>
+                            <b><strong>• Banco Next:</strong></b> <br>
+                            <br>
+                            Outra opção de banco para você criar a sua conta e iniciar seus investimentos é o Banco
+                            Next. O banco Next é um banco digital criado pelo Bradesco e para que você crie sua conta
+                            nesse banco será necessário, primeiramente, que algum responsável já possua uma conta no
+                            banco, pois apenas assim será possível que você tenha acesso ao Next Joy, que é o aplicativo
+                            do banco next voltado apenas para crianças e adolescentes. A plataforma next joy tem como
+                            foco principal a educação financeira, permitindo a criação de contas bancárias para pessoas
+                            de até 17 anos. <br>
+                            <br>
+                            Como faço minha conta no banco Next? <br>
+                            <br>
+                            • Com a conta aberta no aplicativo Next, abra o menu e aperte na opção nexjoy; <br>
+                            • Inicie o cadastro com o RG e CPF do menor; <br>
+                            <br>
+                            Após a provação o login será liberado. A conta na Nextjoy não possui cobrança de tarifas e
+                            você terá disponível um cartão de débito. <br>
+                            <br>
+                            <br>
+                            <b><strong>• BB Conta Jovem:</strong></b> <br>
+                            <br>
+                            Esta conta disponibilizada pelo Banco do Brasil é destinada apenas para pessoas que não
+                            entraram na universidade e possuem de 12 a 21 anos de idade. Diferentemente dos bancos que
+                            mostramos até agora, nessa será necessário que você vá até uma agência física para realizar
+                            a abertura da conta. <br>
+                            <br>
+                            Para abrir a sua conta são necessários alguns documentos. <br>
+                            <br>
+                            • RG e CPF do responsá; <br>
+                            • RG E CPF do menor; <br>
+                            • Comprovante de residência emitido nos últimos 90 dias; <br>
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+
+                    <h2 class="page-section-heading text-left text-uppercase text-black">↬ Faça seus investimentos</h2>
+                    <br>
+                    <br>
+
+                    <!-- About Section Content-->
+                    <br>
+                    <div id="div2" class="row">
+                        <div class="col-lg-11 ms-auto">
+                            <p class="text-black-75 lead" style="font-size: 18px;">
+                                Agora que você já está com a sua conta bancária feita, basta fazer seu primeiro
+                                investimento. Nós apresentamos para você quatro bancos, sendo que apenas em dois deles é
+                                possível que você tenha sua conta e invista ao mesmo tempo que são os bancos Inter e
+                                Modalmais. No banco Next e BB conta jovem você terá que fazer uma conta em uma corretora
+                                separadamente. <br>
+                                <br>
+                                <b><strong>Corretoras:</strong></b> <br>
+                                <br>
+                                Caso você tenha optado pelo BB conta jovem, Next, ou qualquer outro banco onde é
+                                necessário que você tenha conta em uma corretora, nós vamos dar a você duas ótimas
+                                opções de corretoras. <br>
+                                <br>
+                                <b><strong>• Rico</strong></b> <br>
+                                <br>
+                                Na corretora Rico, além da taxa zero para as ações, mesmo que você seja menor de 18
+                                anos, você terá à sua disposição uma grande variedade de investimentos diferentes o que
+                                faz da rico uma ótima opção de corretora. Para fazer o seu cadastro, após entrar no site
+                                da corretora ou instalar o aplicativo no seu celular e clicar na opção CRIAR MINHA
+                                CONTA, inicie preenchendo o pequeno formulário com seus dados e tenha em mãos os seus
+                                documentos RG e CPF e o do seu responsável. Para abrir uma conta para um menor de 18
+                                anos é necessário que você e seus responsáveis imprimam e preencham um documento com
+                                suas informações. Após o preenchimento feito, você vai enviar através do site e a
+                                corretora irá analisar e enviar um retorno a você. <br>
+                                <br>
+                                <b><strong>• Clear</strong></b> <br>
+                                <br>
+                                A Clear é uma corretora taxa zero para as ações assim como a Rico, ou seja, não será
+                                nada cobrado por nenhum tipo de investimento nela. Assim como na Rico, durante o
+                                cadastro,ao entrar no site e clicar na opção CRIAR CONTA será necessário o RG e CPF do
+                                menor e dos responsáveis, assim como um comprovante de residência. Será necessário,
+                                também, que o menor, juntamente com os responsáveis, imprimam e preencham uma ficha
+                                cadastral que será enviada por e-mail. Após o cadastro existe o período de análise que
+                                dura aproximadamente uma semana ou menos.
+                            </p>
+                        </div>
+                        </p>
+
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-0">Quem Somos ?</h2>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">Isso é um projeto dos alunos do curso técnico de informática do IFCE -
+                        campus Fortaleza. Nosso objetivo é ajudar você a entender a importância da educação financeira,
+                        do investimento e ajudá-lo(a) a saber como dar seus primeiros passos nesse universo.
+                    <p>
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <img class="img-fluid" src="assets/img/IFCE.png"></img>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">
+                © Designed by <a href="/index.html">Investe Jovem Company.</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
